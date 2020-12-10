@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>VISPR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"
+        integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+</head>
+
+<body>
+    <div id="imageDiv">
+        <img src="vault.png" id="vaultImage">
+    </div>
+
+    <p>VISPR 1.0</p>
+    <p>The secret vault</p>
+
+    <hr>
+    <div class="SecretKeyArea">
+        <div class="mb-3">
+            <div>
+                <row><label for="exampleFormControlInput1" class="form-label">Secret key</label></row>
+                <row>
+
+                    <input type="email" class="form-control" id="secretKeyInput" value="SECRET_KEY">
+                    <button class="success" id="encryptBtn"><span>Encrypt</span></button>
+                    <button class="success" id="decryptBtn"><span>Decrypt</span></button>
+                </row>
+
+            </div>
+
+        </div>
+        <div class="decryptedArea mb-3">
+            <label for="decryptedTextArea" class="form-label">Message</label>
+            <textarea class="form-control" id="decryptedTextArea" rows="3"></textarea>
+        </div>
+        <div class="encryptedArea mb-3">
+            <label for="encryptedTextArea" class="form-label" id="encrytpDecryptLabel">Encrypted text</label>
+            <textarea class="form-control" id="encryptedTextArea" rows="3" readonly></textarea>
+            <button id="copyBtn">Copy</button>
+        </div>
+    </div>
+
+
+
+</body>
+
+<script src="popup.js"></script>
+
+</html>
